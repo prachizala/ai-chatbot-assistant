@@ -20,7 +20,7 @@ An interactive educational and software engineering assistant built with Python,
   - **Offline Local Engine (Default)**: Fully functional without an API key for offline demos, local study, and continuous integration testing.
   - **Live Cloud LLM API**: Pluggable integration with standard LLM chat completion APIs.
 - **Transcript Export**: One-click export of complete formatted conversation history as clean Markdown (`chat_transcript.md`).
-- **Interactive Streamlit UI**: Chat bubble layout, live token counter, and session memory controls.
+- **Interactive Streamlit UI**: Chat bubble layout, live token counter with visual context window progress bar (`st.progress`), and session memory controls.
 
 ---
 

@@ -72,6 +72,9 @@ with st.sidebar:
 
     st.markdown("---")
     st.metric("Estimated Memory Tokens", f"{cm.total_tokens()} / {cm.max_history_tokens}")
+    token_ratio = min(1.0, max(0.0, float(cm.total_tokens() / cm.max_history_tokens)))
+    st.progress(token_ratio)
+    st.caption(f"Context Budget Utilization: {token_ratio * 100:.1f}%")
 
     c_clear, c_export = st.columns(2)
     with c_clear:
